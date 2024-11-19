@@ -1,0 +1,23 @@
+GET http://localhost:3000/categories?name=au
+
+###
+GET http://localhost:3000/categories
+
+###
+
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+  "name": "Autres"
+}
+
+###
+PUT http://localhost:3000/categories/6
+Content-Type: application/json
+
+{
+  "name": "Location"
+} 
+###
+DELETE http://localhost:3000/categories/2

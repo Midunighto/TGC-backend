@@ -1,0 +1,41 @@
+GET http://localhost:3000/ads
+###
+GET http://localhost:3000/ads?title=voiture
+###
+GET http://localhost:3000/ads/50
+###
+GET http://localhost:3000/ads?category=Habillement
+
+###
+GET http://localhost:3000/ads?tag=pro
+
+###
+GET http://localhost:3000/ads/category/3
+###
+
+POST http://localhost:3000/ads
+Content-Type: application/json
+
+{
+  "title": "Voiture",
+  "description": "e vends une voiture",
+  "owner": "regisrobert",
+  "price": 3500,
+  "picture": "https://www.francetvinfo.fr/pictures/jE-CzLbwBHJ9gd_wIEuEPGvSyf0/0x0:1920x1080/1500x843/2022/12/21/63a331c6857e4_vente-aux-encheres-de-la-voiture-pblv-4333283-00-00-04-15.jpg",
+  "location": "Paris",
+  "createdAt": "2021-01-03T00:00:00.000Z",
+  "category": 4,
+  "tag": [{"id": 4}]
+}
+
+###
+
+DELETE http://localhost:3000/ads/83
+
+###
+PUT http://localhost:3000/ads/82
+Content-Type: application/json
+
+{
+  "category": 6
+}

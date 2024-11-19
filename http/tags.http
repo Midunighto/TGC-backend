@@ -1,0 +1,23 @@
+POST http://localhost:3000/tags
+Content-Type: application/json
+
+{
+  "name": "à donner"
+}
+
+###
+GET http://localhost:3000/tags
+
+###
+GET http://localhost:3000/tags?name=ne
+
+###
+PUT http://localhost:3000/tags/2
+Content-Type: application/json
+
+{
+  "name": "Neuf"
+}
+
+###
+DELETE http://localhost:3000/tags/3
